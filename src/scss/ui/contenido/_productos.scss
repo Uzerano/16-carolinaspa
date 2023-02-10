@@ -1,0 +1,68 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.productos {
+  &__titulo {
+    @include m.tituloCursiva;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  &__grid {
+    @include m.grid(1, 2rem);
+
+    @include m.tablet {
+      @include m.grid(2, 2rem);
+    }
+
+    @include m.escritorio {
+      @include m.grid(4, 2rem);
+    }
+  }
+}
+
+.producto {
+  text-transform: uppercase;
+   text-align: center;
+  &__descripcion {
+    padding: 0 2rem;
+    background-color: v.$blanco;
+  }
+
+  &__titulo {
+    @include m.titulo;
+    color: v.$secundario;
+    font-size: 2.2rem;
+    font-weight: 100;
+  }
+
+  &__texto {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    font-weight: 400;
+    text-align: center;
+    @include m.tablet { 
+        text-align: left;
+    }
+  }
+
+  &__precio {
+    text-align: center;
+    font-size: 2.6rem;
+    color: v.$gris;
+    margin: 0;
+  }
+
+  &__mask {
+    overflow: hidden;
+  }
+
+  &__imagen {
+    transition: transform 0.3s;
+    width: 100%;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
