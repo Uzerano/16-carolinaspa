@@ -1,0 +1,44 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.notavif.notwebp .cita {
+    background-image: url(../img/bg_citas.jpg);
+ 
+}
+
+.avif .cita {
+    background-image: url(../img/bg_citas.avif);
+ 
+}
+.webp .cita {
+    background-image: url(../img/bg_citas.webp);
+   
+}
+
+.cita {
+    background-size: cover;
+    background-position: center center;
+    background-attachment:  fixed;
+      text-align: center;
+      padding: 4rem 0;
+
+    &__titulo {
+         @include m.titulo;
+         font-size: 6rem;
+         color: v.$blanco;
+    }
+
+    &__texto {
+        max-width: 60rem;
+        margin: 0 auto;
+        color: v.$blanco;
+        line-height: 1.8;
+
+    }
+
+    &__enlace {
+          @include m.boton(v.$primario, v.$blanco);
+          padding: 1rem 10rem;
+    }
+}

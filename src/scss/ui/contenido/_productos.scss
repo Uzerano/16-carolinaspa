@@ -24,6 +24,7 @@
 .producto {
   text-transform: uppercase;
    text-align: center;
+  
   &__descripcion {
     padding: 0 2rem;
     background-color: v.$blanco;
@@ -33,7 +34,7 @@
     @include m.titulo;
     color: v.$secundario;
     font-size: 2.2rem;
-    font-weight: 100;
+    margin: 1rem auto;
   }
 
   &__texto {
@@ -41,9 +42,7 @@
     line-height: 1.8;
     font-weight: 400;
     text-align: center;
-    @include m.tablet { 
-        text-align: left;
-    }
+    margin-top: 0;
   }
 
   &__precio {
@@ -59,7 +58,7 @@
 
   &__imagen {
     transition: transform 0.3s;
-    width: 100%;
+      width: 100%;
 
     &:hover {
       transform: scale(1.2);
