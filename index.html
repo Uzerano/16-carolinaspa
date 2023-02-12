@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="build/css/app.css" />
   </head>
   <body>
     <header class="header contenedor">
-      <div class="header__grid">
+      <div class="header__grid">  
         <div class="header__logo">
           <img src="build/img/logo.svg" alt="Logo Carolna Spa" />
         </div>
@@ -54,13 +54,27 @@
       </div>
     </div>
 
-    <section class="slider">
+    <section class="slider contenedor">
       <ul class="slider__contenedor">
         <li class="slider__slide">
           <picture>
-            <source srcset="build/img/slide_02.avif" type="image/avif" />
-            <source srcset="build/img/slide_02.webp" type="image/webp" />
-            <img loading="lazy" src="build/img/slide_02.jpg" alt="Imagen" />
+            <source class="slider__imagen" srcset="build/img/slide_01.avif" type="image/avif" />
+            <source class="slider__imagen" srcset="build/img/slide_01.webp" type="image/webp" />
+            <img class="slider__imagen" loading="lazy" src="build/img/slide_01.jpg" alt="Imagen" />
+          </picture>
+        </li>
+        <li class="slider__slide">
+          <picture>
+            <source class="slider__imagen" srcset="build/img/slide_02.avif" type="image/avif" />
+            <source class="slider__imagen" srcset="build/img/slide_02.webp" type="image/webp" />
+            <img class="slider__imagen" loading="lazy" src="build/img/slide_02.jpg" alt="Imagen" />
+          </picture>
+        </li>
+        <li class="slider__slide">
+          <picture>
+            <source class="slider__imagen" srcset="build/img/slide_03.avif" type="image/avif" />
+            <source class="slider__imagen" srcset="build/img/slide_03.webp" type="image/webp" />
+            <img class="slider__imagen" loading="lazy" src="build/img/slide_03.jpg" alt="Imagen" />
           </picture>
         </li>
       </ul>
@@ -369,8 +383,58 @@
       <a href="#" class="cita__enlace">Leer más</a>
     </section>
 
+    <footer class="footer seccion">
+      <div class="footer__grid  contenedor">
+         <div class="footer__columna">
+                <h3 class="footer__titulo">nosotros</h3>
+                <p class="footer__texto">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  Expedita cum, minus atque harum maxime reprehenderit fugiat 
+                  sed corrupti inventore tempora quisquam provident aut facere 
+                  ipsum pariatur, esse velit blanditiis quae!
+                </p>
+         </div>
+         <div class="footer__columna">
+          <h3 class="footer__titulo">horario</h3>
+   
+            <p class="footer__texto">Lun-Vie: 9AM - 7PM</p>
+            <p class="footer__texto">Sábado: 9AM - 2PM</p>
+            <p class="footer__texto">Domingo: Cerrado</p>
+
+         </div>
+         <div class="footer__columna">
+          <h3 class="footer__titulo">contacto</h3>
+          <p class="footer__texto">Av. Revolución 1818</p>
+          <nav class="sociales ">
+            <a class="sociales__enlace footer__enlace" href="https://facebook.com">
+              <span class="sociales__accesible">Facebook</span>
+            </a>
+            <a class="sociales__enlace footer__enlace" href="https://twitter.com">
+              <span class="sociales__accesible">Twitter</span>
+            </a>
+            <a class="sociales__enlace footer__enlace" href="https://instagram.com">
+              <span class="sociales__accesible">Instagram</span>
+            </a>
+            <a class="sociales__enlace footer__enlace" href="https://youtube.com">
+              <span class="sociales__accesible">YouTobe</span>
+            </a>
+            <a class="sociales__enlace footer__enlace" href="https://pinterest.com">
+              <span class="sociales__accesible">Pinterest</span>
+            </a>
+            <a class="sociales__enlace footer__enlace" href="https://tiktok.com"></a>
+            <span class="sociales__accesible">TikTok</span>
+          </nav>
+         </div>
+      </div>
+          <p class="footer__copyright"> 
+            Carolina Spa & Salón. Todos los derechos reservados&copy;.
+          </p>
+    </footer>
+
    
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/imagenes.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
